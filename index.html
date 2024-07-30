@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es-mx">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proy_Encriptador</title>
+    <link rel="stylesheet" href="./estilo.css">
+        
+    </head> 
+    
+    <body>
+        <header >        
+            <img class="imgLogo" src="./imagenes/Logo.png" alt="Logo de alura">
+            
+        </header>
+
+        <main>
+
+            <section class="Parte_de_Ingreso">
+                <textarea class="Texto_Ingrese" placeholder="Ingrese el texto aqui"></textarea> 
+                 
+                <div class="validar">
+                    <img class="Imagen_Exclamacion" src="./imagenes/exclamation.png" alt="Imagen exclamacion">   
+                    <h1 class="texvalidar"> Solo letras minusculas y sin acentos.</h1>
+                </div>         
+                
+                <div class="Botones__Enlaces">
+                    <button type ="submit" class="Boton_Encriptar">Encriptar</button>                
+                    <button type ="submit" class="Boton__Desencriptar">Desencriptar</button>   
+                </div>            
+            </section>    
+
+            <section class="Parte_Encriptar"> 
+
+                <div class="cuadro_encriptar">
+                    <img class="imgMuñeco" src="./imagenes/Muneco.png" alt="Imagen Muñeco">   
+                    <p class="Mensaje_encriptado_uno">Ningun mensaje fue encriptado</p>
+                    <p  class="Mensaje_encriptado_dos">encuentra el texto que deseas encriptar o desencriptar</p>
+                </div> 
+
+                            
+                      <textarea type = "mensaje" class="Mensaje_encriptado"readonly></textarea>
+                      <button type ="submit" class="Boton_copiar">Copiar</button>
+                  
+            </section>         
+        </main>
+        
+         <footer>
+        </footer>
+
+        <script src ="script.js"></script>
+    </body>
+
+</html>                         
+                                                      

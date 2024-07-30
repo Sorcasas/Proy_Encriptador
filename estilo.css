@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?famil y=Inter:wght@100..900&display=swap');/*fuete*/
+
+:root{
+    --fuente:#e5e5e5;
+    --Blanco:#FFFFFF;
+    --AzulOscuro:#0A3871;
+    --Gris:#C5C5C5;
+    --GrisClaro:#67808E;
+    --RGBA:rgba (0,0,0,0.08);
+    --AzulClaro:#D8DFE8;
+    --Azul:#0a38718a;
+    --GrisOscuro:#343A40;
+    --Grissuave:#102c48;
+
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    text-decoration: none;
+    background: var(--Blanco);
+
+}
+::selection{
+    background: var(--AzulOscuro);
+    color: var(--Blanco)
+
+}
+
+body{
+   
+  height:100%;
+ 
+}
+
+img{
+    max-width:100%;
+}
+
+/*ENCABEZADO*/
+
+header{
+    position: absolute;
+    margin: 40px opx opx 40px;
+}
+header.imgLogo{
+    display: flex;
+    align-items:flex-start;
+    width: 120px;
+    height: 48px;
+    
+}
+
+main{
+display: flex;
+flex-direction: row;
+background-color: url(../imagenes/Logo.png) no-repeat;
+background-size: cover;
+background-position: center;
+
+}
+
+.Parte_de_Ingreso{
+    width: 60%;
+    margin: 168px 0px 0px 140px;
+    background: transparent;
+}
+
+.Texto_Ingrese{
+ width: 660px;
+ height: 288px;
+ font-weight: 400;
+ font-size: 32px;
+ line-height: 48px;
+ outline: none;
+ border: 1px solid var(--Gris);  
+ border-radius: 15px;
+ resize: none;
+ 
+
+}
+
+.Texto_Ingrese::placeholder,:focus{
+    color:var(--AzulOscuro);
+
+}
+.Imagen_Exclamacion{
+
+    width: 25px;
+    margin: auto;   
+}
+
+.validar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+    
+}
+
+
+.texvalidar{
+    width: 100%;
+    font-size: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0,8;
+   color: var(--GrisClaro);
+}
+
+    
+.Botones__Enlaces{
+    
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+   
+      
+    
+}
+
+.Boton_Encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Blanco);
+    background: var(--AzulOscuro);
+    border: 1px solid var(--AzulOscuro);
+    border-radius: 24px;
+    cursor:pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA); 
+  
+}
+
+.Boton_Encriptar:active{
+    box-shadow: inset 2px  2px 4px var(--fuente);
+    inset: -3px -4px 8px var(--AzulOscuro);
+    color: var(--AzulClaro);
+ 
+}
+
+.Boton__Desencriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--AzulOscuro);
+    background: var(--AzulClaro);
+    border: 1px solid var(--AzulOscuro);
+    border-radius: 24px;
+    cursor:pointer;
+    box-shadow: 0px 20px 29px -5px var(--RGBA); 
+  
+}
+
+.Boton__Desencriptar:active
+{
+    box-shadow: inset 2px  4px var(--AzulOscuro);
+    inset: -3px -4px 8px var(--fuente);
+    color: var(--Azull);
+
+}
+
+.Parte_Encriptar{
+
+    width: 270px;
+    height: 570px;
+    background: var(--fuente);
+    box-shadow: 10px 24px 32px -8px var(--GrisOscuro);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+
+}
+.cuadro_encriptar{
+    
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background: var(--fuente);
+
+}
+.imgMuñeco{
+    background: var(--fuente); 
+   
+}
+.Mensaje_encriptado_uno{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--GrisOscuro);
+    background: var(--fuente);
+}
+.Mensaje_encriptado_dos{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: var(--GrisClaro);
+    background: var(--fuente);
+}
+
+.Mensaje_encriptado{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left:0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--Grissuave);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius:  32px;
+    border: none;
+    resize: none;
+  }
+
+.Mensaje_encriptado:focus{
+outline: none;
+
+}
+.Boton_copiar{
+    width: 228px;
+    height: 67px;
+    margin:23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden; /*para desaparecer boton copiar*/
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--AzulClaro);
+    border: 1px solid var(--AzulOscuro);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+ /*hace reducir boton al pasar el cursos sobre ellos*/
+.Boton_Encriptar:hover,
+.Boton__Desencriptar:hover,
+.Boton_copiar:hover
+{
+
+transform: scale(0.97);
+}
+
+/*estilo responsivo*/
+
+@media(max-width:1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .Texto_Ingrese{
+        margin: 168px 0px opx opx;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; 
+     }
+     .Botones__Enlaces{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    } 
+    .validar{
+        position: inherit;
+        margin: 15px;
+        }
+    .Parte_Encriptar{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+            
+        }
+    .cuadro_encriptar{
+        align-items: center;
+        display: block;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        Font-size: 24px;
+        font-weight: 700;
+        }
+    .imgMuñeco{
+        display: none;
+        }
+
+    .Boton_copiar{
+        position: inherit;
+        width: 100%;
+        }
+    .Mensaje_encriptado{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    
+        }
+}
+
+@media(max-width:720px){
+
+    header.imgLogo{
+        width: 100%;
+        background: var(--Blanco);
+        padding: 2px;
+    }
+    .Texto_Ingrese{
+        width: 90%;
+        font-size:24px;
+
+    }
+    .Botones__Enlaces{
+        display: grid;
+        gap:21px;
+    }
+    .Parte_Encriptar{
+        width: 90%;
+    }
+
+}
